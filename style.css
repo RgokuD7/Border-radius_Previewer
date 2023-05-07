@@ -1,0 +1,73 @@
+body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+h1{
+    text-align: center;
+}
+input, select{
+    width: 20%;
+}
+.container{
+    position: relative;
+    background-color: black;
+    width: 500px;
+    height: 500px;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+@media screen and ( max-width: 600px) {
+    .container{
+        width: 270px;
+        height: 270px;
+    }
+}
+.border-previewer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    width: 50%;
+    height: 50%;
+    background-color: aqua;
+}
+.top-left{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    justify-content: start;
+}
+.top-right{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: end;
+}
+.bottom-left{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    display: flex;
+    justify-content: start;
+}
+.bottom-right{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: end;
+}
